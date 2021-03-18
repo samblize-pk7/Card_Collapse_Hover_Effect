@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mini Menu | ST</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+   <div class="center-view">
+      <div class="my_container">
+         <div class="card">
+            <div class="imgBx">
+               <img src="./assets/nature-1.jpg" alt="Alaki" />
+            </div>
+            <div class="content">
+               <h2>Card one</h2>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam et
+                  soluta pariatur molestias, fugiat quos modi deserunt nobis tempora, ab
+                  suscipit porro aut perspiciatis iusto?
+               </p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="imgBx">
+               <img src="./assets/nature-2.jpg" alt="Alaki" />
+            </div>
+            <div class="content">
+               <h2>Card two</h2>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam et
+                  soluta pariatur molestias, fugiat quos modi deserunt nobis tempora, ab
+                  suscipit porro aut perspiciatis iusto?
+               </p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="imgBx">
+               <img src="./assets/nature-3.jpg" alt="Alaki" />
+            </div>
+            <div class="content">
+               <h2>Card three</h2>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam et
+                  soluta pariatur molestias, fugiat quos modi deserunt nobis tempora, ab
+                  suscipit porro aut perspiciatis iusto?
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!--  this is just Handle the Hover Sound  -->
+   <script>
+      var paper = new Audio('./assets/paper-3.mp3');
+      const navUl = document.querySelector(".my_container").children;
+      for (var i = 0; i < navUl.length; i++) {
+
+         navUl[i].firstElementChild.addEventListener("mouseenter", function (event) {
+            paper.play();
+         });
+      }
+   </script>
+</body>
+
+</html>
